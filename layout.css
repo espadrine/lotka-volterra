@@ -1,0 +1,96 @@
+/* 
+    Copyright (c) Thaddée Tyl. All rights reserved.
+*/
+
+html {
+    color: #333;
+    background-color: #787;
+    text-align: center;
+}
+
+h1 {
+    /* layout. */
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    /* text. */
+    font-family: "Gentium Basic",Palatino, Perpetua, Georgia, serif;
+    color: #da0;
+    text-shadow: 1px 1px 5px #a32,
+                -1px 1px 5px #a32;
+    /* background. */
+    background-color: #dd7;
+    border-top:    dotted 2px #ddd;
+    border-left:   solid  2px #ddd;
+    border-right:  dashed 3px #ddd;
+    border-bottom: double 3px #ddd;
+    border-radius:         10px;
+    -moz-border-radius:    10px;
+    -webkit-border-radius: 10px; /* _ugly!_ */
+}
+
+section {
+    float: left;
+    width: 45%;
+    margin-left: 3%;
+    margin-right: 2%;
+    font-family: 'Tangerine',cursive;
+    font-size: 1.5em;
+    text-align: justify;
+}
+section p {
+    text-indent: 20px;
+}
+section h2 {
+    padding-left: 60px;
+}
+section table {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Andika Basic","Gill Sans",Consolas,monospace;
+    font-size: 0.5em;
+    text-shadow: 0px 1px 0px #999;
+}
+section table td {
+  padding: 0px 20px 0px 20px;
+  border: solid black 1px;
+  background-color: rgba(0,0,0,0.1);
+  cursor: text;
+  -webkit-transition: text-shadow 0.5s ease;
+  -moz-transition: text-shadow 0.5s ease;
+  transition: text-shadow 0.5s ease;
+}
+section table td:hover {
+	text-shadow: 0px 1px 3px #333;
+}
+
+div {
+    float: left;
+    width: 45%;
+    margin-left: 2%;
+    margin-right: 3%;
+    margin-top: 3%;
+}
+
+canvas {
+    margin: auto;
+}
+
+footer {
+    color: #575;
+    font-size: 0.8em;
+    font-family: "Gill sans", sans-serif;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+}
+
+a, a:visited {
+    color: #dd7;
+    text-decoration: none;
+}
+a:hover {
+    color: #333;
+    background-color: #dd7;
+    text-decoration: none;
+}

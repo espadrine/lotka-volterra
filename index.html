@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="http://fonts.googleapis.com/css?family=Tangerine"
+              rel="stylesheet" type="text/css">
+        <link type="text/css" href="layout.css" rel="stylesheet">
+        <title>Lotka</title>
+    </head>
+    <body onload="start();">
+        <h1>Lotka Algorithmic Simulation</h1>
+        <!-- left panel. -->
+        <section>
+            <h2>Synopsis</h2>
+            <p>Men eat deer. But the less deer there are, the less men can
+            eat. Empty stomach kills. But if men die, there is nobody
+            left to hunt down deer, which lets them procreate happily!
+            Which makes them easier to hunt. More information
+            at <a href="http://en.wikipedia.org/wiki/Lotka-Volterra_equation">
+            Lotka-Volterra</a>.</p>
+            <ul>
+                <li>Men eat adjacent deer and procreate after their meal.
+                If they haven't had a meal, they die.</li>
+                <li>Deer get pregnant if adjacent to bare ground.</li>
+                <li>If adjacent to bare ground, men and deer will move.</li>
+            </ul>
+            <h2>Parameters</h2>
+            <table><tbody>
+                <tr><th>Time taken by each step:</th>
+                    <td contentEditable id="speed">10</td>
+                <tr><th>Initial percentage of men:</th>
+                    <td contentEditable id="iNumMan">0.02</td>
+                <tr><th>Initial percentage of deer:</th>
+                    <td contentEditable id="iNumDeer">0.2</td>
+                <tr><th>Probability of death of men:</th>
+                    <td contentEditable id="pDeleteMan">0.02</td>
+                <tr><th>Probability of birth of men:</th>
+                    <td contentEditable id="pNewMan">0.9</td>
+                <tr><th>Probability of birth of deer:</th>
+                    <td contentEditable id="pNewDeer">0.04</td>
+            </tbody></table>
+        </section>
+        <!-- core app. -->
+        <div>
+            <canvas id="can" height="400" width="400">
+                Note: you need html5 to run this.
+            </canvas>
+            <form action="javascript:void(0);">
+                <button title="Start simulation" onclick="start();">
+                    Start
+                </button>
+            </form>
+        </div>
+        <footer>&copy; 2010 Thadd&eacute;e Tyl. All rights reserved.</footer>
+        <script type="text/javascript" src="lotka.js"></script>
+    </body>
+</html>
